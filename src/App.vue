@@ -55,13 +55,13 @@ export default {
       contacts: [
         {
           href: 'https://github.com/Rovniced',
-          imgSrc: '@/assets/github-icon.svg',
+          imgSrc: '/assets/github-icon.svg',
           alt: 'GitHub',
           text: 'Rovniced',
         },
         {
           href: 'https://t.me/luotianyi_2333',
-          imgSrc: '@/assets/telegram-icon.svg',
+          imgSrc: '../assets/telegram-icon.svg',
           alt: 'Telegram',
           text: 'Telegram',
         },
