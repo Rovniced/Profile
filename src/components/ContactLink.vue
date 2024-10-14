@@ -1,5 +1,10 @@
 <template>
-  <a :href="href" target="_blank" aria-label="Contact link" class="contact-link">
+  <a
+    :href="href"
+    target="_blank"
+    aria-label="Contact link"
+    class="contact-link"
+  >
     <img :src="imgSrc" :alt="alt" class="icon" />
     {{ text }}
   </a>
@@ -17,7 +22,6 @@ export default {
 </script>
 
 <style scoped>
-
 .contact-link:focus {
   outline: none;
   box-shadow: none;

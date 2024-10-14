@@ -17,7 +17,7 @@ export default {
       default: 'GitHub',
     },
   },
-};
+}
 </script>
 
 <style scoped>

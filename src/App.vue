@@ -43,10 +43,9 @@
 import ContactLink from './components/ContactLink.vue'
 import ProjectCard from './components/ProjectCard.vue'
 
-import githubIcon from './assets/github-icon.svg';
-import telegramIcon from './assets/telegram-icon.svg';
-import mailIcon from './assets/mail-icon.svg';
-
+import githubIcon from './assets/github-icon.svg'
+import telegramIcon from './assets/telegram-icon.svg'
+import mailIcon from './assets/mail-icon.svg'
 
 export default {
   components: {
@@ -87,12 +86,14 @@ export default {
           title: 'Music Download Bot',
           description: 'A Telegram music download bot',
           link: 'https://t.me/music_v1bot',
+          platform: 'Telegram',
         },
         {
           title: 'BiliBili Sticker Transform Bot',
           description:
             'A Telegram bot that converts BiliBili Stickers into Telegram',
           link: 'https://t.me/music_v1bot',
+          platform: 'Telegram',
         },
       ],
       friends: [
