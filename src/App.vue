@@ -92,7 +92,7 @@ export default {
           title: 'BiliBili Sticker Transform Bot',
           description:
             'A Telegram bot that converts BiliBili Stickers into Telegram',
-          link: 'https://t.me/music_v1bot',
+          link: 'https://t.me/Enlysure_sticker_bot',
           platform: 'Telegram',
         },
       ],
@@ -101,6 +101,7 @@ export default {
         { name: '叶叶', href: 'https://github.com/leafmoes' },
         { name: '墨缘', href: 'https://github.com/MoYuanCN' },
         { name: '萝莉@TheSw1m', href: 'https://github.com/swim233' },
+        { name: 'Ice Elysia', href: 'https://t.me/ice_elysia' },
       ],
     }
   },
