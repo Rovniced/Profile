@@ -43,6 +43,11 @@
 import ContactLink from './components/ContactLink.vue'
 import ProjectCard from './components/ProjectCard.vue'
 
+import githubIcon from './assets/github-icon.svg';
+import telegramIcon from './assets/telegram-icon.svg';
+import mailIcon from './assets/mail-icon.svg';
+
+
 export default {
   components: {
     ContactLink,
@@ -55,19 +60,19 @@ export default {
       contacts: [
         {
           href: 'https://github.com/Rovniced',
-          imgSrc: '/assets/github-icon.svg',
+          imgSrc: githubIcon,
           alt: 'GitHub',
           text: 'Rovniced',
         },
         {
           href: 'https://t.me/luotianyi_2333',
-          imgSrc: '../assets/telegram-icon.svg',
+          imgSrc: telegramIcon,
           alt: 'Telegram',
           text: 'Telegram',
         },
         {
           href: 'mailto:enlysure@gmail.com',
-          imgSrc: '@/assets/mail-icon.svg',
+          imgSrc: mailIcon,
           alt: 'Mail',
           text: 'Gmail',
         },
