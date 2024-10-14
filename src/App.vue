@@ -97,8 +97,10 @@ export default {
         },
       ],
       friends: [
+        { name: '思思', href: 'https://github.com/sisi0318' },
         { name: '叶叶', href: 'https://github.com/leafmoes' },
         { name: '墨缘', href: 'https://github.com/MoYuanCN' },
+        { name: '萝莉@TheSw1m', href: 'https://github.com/swim233' },
       ],
     }
   },
