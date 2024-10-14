@@ -1,6 +1,6 @@
 <template>
   <a :href="href" target="_blank" aria-label="Contact link" class="contact-link">
-    <img :src="computedImgSrc" :alt="alt" class="icon" />
+    <img :src="imgSrc" :alt="alt" class="icon" />
     {{ text }}
   </a>
 </template>
@@ -12,23 +12,6 @@ export default {
     imgSrc: String,
     alt: String,
     text: String,
-  },
-  data() {
-    return {
-      computedImgSrc: '',
-    }
-  },
-  mounted() {
-    this.formatImagePath()
-  },
-  methods: {
-    formatImagePath() {
-      if (this.imgSrc.startsWith('@/')) {
-        this.computedImgSrc = this.imgSrc.replace('@/', '/src/')
-      } else {
-        this.computedImgSrc = this.imgSrc
-      }
-    },
   },
 }
 </script>
