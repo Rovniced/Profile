@@ -132,6 +132,7 @@ export default {
   position: absolute;
   top: 10%;
   left: 5%;
+  color: #fff;
 }
 
 .name {
@@ -154,6 +155,7 @@ h2 {
   margin-top: 40px;
   margin-bottom: 20px;
   font-weight: bold;
+  color: #fff;
 }
 
 .contact-info {
@@ -163,7 +165,7 @@ h2 {
 .contact-info a {
   display: flex;
   align-items: center;
-  color: var(--text-color);
+  color: #fff;
   text-decoration: none;
   margin-right: 20px;
   font-size: 1.2em;
@@ -180,7 +182,7 @@ h2 {
   position: absolute;
   bottom: 10%;
   left: 5%;
-  color: var(--text-color);
+  color: #fff;
 }
 
 .friends h2 {
@@ -207,7 +209,7 @@ h2 {
 }
 
 .friends a {
-  color: var(--main-color);
+  color: #fff;
   text-decoration: none;
   font-size: 1.2em;
 }

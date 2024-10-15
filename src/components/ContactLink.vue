@@ -37,4 +37,8 @@ export default {
   margin-right: 10px;
   filter: invert(100%);
 }
+
+.contact-link {
+  color: #fff !important;
+}
 </style>

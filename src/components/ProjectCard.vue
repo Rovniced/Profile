@@ -49,4 +49,8 @@ export default {
 .project-card a:hover {
   background-color: rgba(255, 255, 255, 0.1);
 }
+
+.project-card {
+  color: #fff !important;
+}
 </style>
