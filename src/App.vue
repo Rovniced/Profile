@@ -1,7 +1,8 @@
 <template>
   <div id="app">
     <div class="background-overlay"></div>
-    <header class="header">
+
+    <header class="header" v-if="!isMobile">
       <h1 class="name">{{ name }}</h1>
       <p class="title">{{ description }}</p>
       <div class="contact-info">
@@ -16,7 +17,7 @@
       </div>
     </header>
 
-    <section class="projects">
+    <section class="projects" v-if="!isMobile">
       <h2>Participation projects</h2>
       <ProjectCard
         v-for="(project, index) in projects"
@@ -27,7 +28,7 @@
       />
     </section>
 
-    <div class="friends">
+    <div class="friends" v-if="!isMobile">
       <h2>Friends</h2>
       <ul class="friends-element">
         <li v-for="(friend, index) in friends" :key="index">
@@ -36,8 +37,50 @@
       </ul>
       If you wish to exchange friend links, please contact me.
     </div>
+
+    <div class="mobile-layout" v-if="isMobile">
+      <header class="mobile-header">
+        <h1 class="name">{{ name }}</h1>
+        <p class="title">{{ description }}</p>
+      </header>
+
+      <div class="mobile-contact">
+        <h2>Contact</h2>
+        <div>
+          <ContactLink
+            v-for="(contact, index) in contacts"
+            :key="index"
+            :href="contact.href"
+            :imgSrc="contact.imgSrc"
+            :alt="contact.alt"
+            :text="contact.text"
+          />
+        </div>
+      </div>
+
+      <section class="mobile-projects">
+        <h2>Projects</h2>
+        <ProjectCard
+          v-for="(project, index) in projects"
+          :key="index"
+          :title="project.title"
+          :description="project.description"
+          :link="project.link"
+        />
+      </section>
+
+      <div class="mobile-friends">
+        <h2>Friends</h2>
+        <ul>
+          <li v-for="(friend, index) in friends" :key="index">
+            <a :href="friend.href" target="_blank">{{ friend.name }}</a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </div>
 </template>
+
 
 <script>
 import ContactLink from './components/ContactLink.vue'
@@ -103,8 +146,21 @@ export default {
         { name: '萝莉@TheSw1m', href: 'https://github.com/swim233' },
         { name: 'Ice Elysia', href: 'https://t.me/ice_elysia' },
       ],
+      isMobile: false,
     }
   },
+  created() {
+    this.checkScreenWidth();
+    window.addEventListener('resize', this.checkScreenWidth);
+  },
+  beforeUnmount() {
+    window.removeEventListener('resize', this.checkScreenWidth);
+  },
+  methods: {
+    checkScreenWidth() {
+      this.isMobile = window.innerWidth < 768;
+    },
+  }
 }
 </script>
 
@@ -221,5 +277,35 @@ h2 {
 
 .friends-element {
   margin-bottom: 20px;
+}
+
+.mobile-layout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.mobile-header {
+  font-size: 0.9em;
+}
+
+.mobile-header, .mobile-contact, .mobile-projects, .mobile-friends {
+  color: #fff;
+  margin-bottom: auto;
+}
+
+.mobile-contact h2,
+.mobile-projects h2,
+.mobile-friends h2 {
+  font-size: 2em;
+  color: #fff;
+  width: 100%;
+}
+
+.mobile-contact a,
+.mobile-friends a {
+  color: #fff;
+  display: block;
+  margin: 5px 0;
 }
 </style>
