@@ -308,4 +308,15 @@ h2 {
   display: block;
   margin: 5px 0;
 }
+
+.mobile-contact a {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+  text-decoration: none;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
 </style>

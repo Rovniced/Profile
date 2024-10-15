@@ -39,6 +39,12 @@ export default {
 }
 
 .contact-link {
+  display: flex;
+  align-items: center;
   color: #fff !important;
+  text-decoration: none;
+  padding: 10px;
+  box-sizing: border-box;
 }
+
 </style>
