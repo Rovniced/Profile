@@ -25,6 +25,7 @@
         :title="project.title"
         :description="project.description"
         :link="project.link"
+        :platform="project.platform"
       />
     </section>
 
@@ -66,6 +67,7 @@
           :title="project.title"
           :description="project.description"
           :link="project.link"
+          :platform="project.platform"
         />
       </section>
 
@@ -124,6 +126,7 @@ export default {
           title: 'ArkLights',
           description: 'The Most Powerful Arknights Gaming Script',
           link: 'https://github.com/AegirTech/ArkLights',
+          platform: 'Github',
         },
         {
           title: 'Music Download Bot',
