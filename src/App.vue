@@ -148,6 +148,7 @@ export default {
         { name: '墨缘', href: 'https://github.com/MoYuanCN' },
         { name: '萝莉@TheSw1m', href: 'https://github.com/swim233' },
         { name: 'Ice Elysia', href: 'https://t.me/ice_elysia' },
+        { name: 'huige', href: 'https://huige233.com/' },
       ],
       isMobile: false,
     }
@@ -320,6 +321,12 @@ h2 {
   text-decoration: none;
   padding: 10px;
   box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .background-overlay {
+    position: fixed;
+  }
 }
 
 </style>
