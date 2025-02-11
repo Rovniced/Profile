@@ -180,7 +180,7 @@ export default {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('https://cdn-img.gitcode.com/dd/cb/dd63c9bc5aea2ae23e35054f6dc9fe60649d0de087234824938ac80d8a1a24dc.png');
+  background-image: url('@/assets/background.png');
   background-size: cover;
   background-position: center;
   filter: brightness(0.3);
