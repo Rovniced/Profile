@@ -180,7 +180,7 @@ export default {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('https://mmsprxiaoweicos-1258344707.cos.ap-shanghai.tencentcos.cn/chatbot/30-openaiassets_d4e86b3482f4463fede745b899ea0c80_109711736562822559.png');
+  background-image: url('https://cdn-img.gitcode.com/dd/cb/dd63c9bc5aea2ae23e35054f6dc9fe60649d0de087234824938ac80d8a1a24dc.png');
   background-size: cover;
   background-position: center;
   filter: brightness(0.3);
