@@ -143,8 +143,8 @@ export default {
         },
       ],
       friends: [
-        { name: '思思', href: 'https://github.com/sisi0318' },
-        { name: '叶叶', href: 'https://github.com/leafmoes' },
+        { name: '思思', href: 'https://blog.0013107.xyz/' },
+        { name: '叶叶', href: 'https://zako.uk/' },
         { name: '墨缘', href: 'https://MoYuanCN.vip' },
         { name: '萝莉@TheSw1m', href: 'https://github.com/swim233' },
         { name: 'huige', href: 'https://huige233.com/' },
